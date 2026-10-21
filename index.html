@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawLux | Premium Pet Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="topbar">
+    <p>🐾 Free shipping on orders over $75</p>
+    <p>Premium Care • Happy Pets • Happy Life</p>
+</div>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        <span>🐾</span> PawLux
+    </a>
+
+    <nav id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+        <button id="themeBtn">🌙</button>
+        <button id="wishlistBtn">♡ <span id="wishlistCount">0</span></button>
+        <button id="cartBtn">🛒 <span id="cartCount">0</span></button>
+        <button id="menuBtn" class="menu-btn">☰</button>
+    </div>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="eyebrow">PREMIUM PET LIFESTYLE</span>
+        <h1>Because Your Pet Deserves <span>The Best.</span></h1>
+        <p>
+            Discover premium food, stylish accessories, comfortable beds,
+            playful toys and professional care for your beloved companions.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="shop.html" class="btn">Shop Collection →</a>
+            <a href="services.html" class="btn btn-outline">Explore Services</a>
+        </div>
+
+        <div class="hero-rating">
+            ⭐⭐⭐⭐⭐ <strong>4.9/5</strong>
+            <span>from 2,500+ happy pet parents</span>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1000&q=85" alt="Happy dog">
+        <div class="floating-card">
+            <span>🐶</span>
+            <div>
+                <strong>Happy Pets</strong>
+                <small>Premium care every day</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features container">
+    <div class="feature">
+        <span>🚚</span>
+        <div>
+            <h3>Free Shipping</h3>
+            <p>On orders over $75</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <span>🛡️</span>
+        <div>
+            <h3>Premium Quality</h3>
+            <p>Products you can trust</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <span>💚</span>
+        <div>
+            <h3>Pet Approved</h3>
+            <p>Loved by thousands</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <span>📞</span>
+        <div>
+            <h3>Expert Support</h3>
+            <p>We're here for you</p>
+        </div>
+    </div>
+</section>
+
+<section class="section container">
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">SHOP BY CATEGORY</span>
+            <h2>Everything Your Pet Loves</h2>
+        </div>
+        <a href="shop.html" class="text-link">View All →</a>
+    </div>
+
+    <div class="category-grid">
+        <a href="shop.html?category=Dogs" class="category-card">
+            <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=600&q=80" alt="Dogs">
+            <div><h3>Dogs</h3><p>Everything for your best friend</p></div>
+        </a>
+
+        <a href="shop.html?category=Cats" class="category-card">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80" alt="Cats">
+            <div><h3>Cats</h3><p>Comfort and fun for every cat</p></div>
+        </a>
+
+        <a href="shop.html?category=Food" class="category-card">
+            <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=600&q=80" alt="Pet Food">
+            <div><h3>Food</h3><p>Healthy nutrition for happy pets</p></div>
+        </a>
+
+        <a href="shop.html?category=Toys" class="category-card">
+            <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=600&q=80" alt="Pet Toys">
+            <div><h3>Toys</h3><p>Playtime starts here</p></div>
+        </a>
+    </div>
+</section>
+
+<section class="section soft-section">
+    <div class="container">
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">OUR COLLECTION</span>
+                <h2>Featured Products</h2>
+            </div>
+            <a href="shop.html" class="text-link">Shop All →</a>
+        </div>
+
+        <div class="product-grid" id="featuredProducts"></div>
+    </div>
+</section>
+
+<section class="offer container">
+    <div>
+        <span class="eyebrow">LIMITED TIME OFFER</span>
+        <h2>Give Your Pet More. Spend Less.</h2>
+        <p>Get up to 30% off selected premium pet essentials.</p>
+
+        <div class="countdown">
+            <div><strong id="days">02</strong><small>Days</small></div>
+            <div><strong id="hours">12</strong><small>Hours</small></div>
+            <div><strong id="minutes">45</strong><small>Minutes</small></div>
+            <div><strong id="seconds">30</strong><small>Seconds</small></div>
+        </div>
+
+        <a href="shop.html" class="btn">Shop The Sale →</a>
+    </div>
+
+    <div class="offer-image">
+        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80" alt="Dog">
+    </div>
+</section>
+
+<section class="about-preview container">
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=900&q=80" alt="Pet grooming">
+    </div>
+
+    <div class="about-content">
+        <span class="eyebrow">WELCOME TO PAWLUX</span>
+        <h2>More Than A Pet Store.</h2>
+        <p>
+            PawLux was created for pet parents who want exceptional products,
+            thoughtful services and a better lifestyle for their pets.
+        </p>
+        <p>
+            From everyday essentials to premium accessories, every product is
+            selected with comfort, quality and happiness in mind.
+        </p>
+
+        <a href="about.html" class="btn">Our Story →</a>
+    </div>
+</section>
+
+<section class="stats-section">
+    <div class="container stats">
+        <div><strong data-stat="2500">0</strong><span>Happy Customers</span></div>
+        <div><strong data-stat="15000">0</strong><span>Pets Served</span></div>
+        <div><strong data-stat="120">0</strong><span>Premium Products</span></div>
+        <div><strong data-stat="4.9">0</strong><span>Average Rating</span></div>
+    </div>
+</section>
+
+<section class="section container">
+    <div class="section-heading centered">
+        <span class="eyebrow">CUSTOMER LOVE</span>
+        <h2>What Pet Parents Say</h2>
+    </div>
+
+    <div class="testimonial-grid">
+        <div class="testimonial">
+            <div>⭐⭐⭐⭐⭐</div>
+            <p>"The quality is amazing. My dog absolutely loves his new bed!"</p>
+            <strong>— Sarah M.</strong>
+        </div>
+
+        <div class="testimonial">
+            <div>⭐⭐⭐⭐⭐</div>
+            <p>"Beautiful products, fast delivery and excellent customer service."</p>
+            <strong>— James R.</strong>
+        </div>
+
+        <div class="testimonial">
+            <div>⭐⭐⭐⭐⭐</div>
+            <p>"PawLux has become my go-to pet store. Highly recommended."</p>
+            <strong>— Emma K.</strong>
+        </div>
+    </div>
+</section>
+
+<section class="newsletter">
+    <div class="container newsletter-content">
+        <div>
+            <span class="eyebrow">JOIN THE PAWLUX FAMILY</span>
+            <h2>Get Pet Tips & Exclusive Offers</h2>
+            <p>Subscribe for helpful pet-care tips and special discounts.</p>
+        </div>
+
+        <form id="newsletterForm">
+            <input type="email" placeholder="Your email address" required>
+            <button class="btn">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <a href="index.html" class="logo">🐾 PawLux</a>
+            <p>Premium care for your favorite companions.</p>
+        </div>
+
+        <div>
+            <h4>Shop</h4>
+            <a href="shop.html">All Products</a>
+            <a href="shop.html?category=Dogs">Dogs</a>
+            <a href="shop.html?category=Cats">Cats</a>
+            <a href="shop.html?category=Food">Food</a>
+        </div>
+
+        <div>
+            <h4>Company</h4>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>📍 Chandigarh, India</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉️ hello@pawlux.com</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 PawLux. All Rights Reserved.
+    </div>
+</footer>
+
+<div id="cartOverlay" class="cart-overlay"></div>
+
+<aside id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button id="closeCart">×</button>
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-footer">
+        <div>
+            <span>Total</span>
+            <strong id="cartTotal">$0.00</strong>
+        </div>
+        <button id="checkoutBtn" class="btn full">Checkout</button>
+    </div>
+</aside>
+
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

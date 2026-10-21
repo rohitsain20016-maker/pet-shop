@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | PawLux</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="topbar">
+    <p>🐾 Free shipping on orders over $75</p>
+    <p>Premium Care • Happy Pets • Happy Life</p>
+</div>
+
+<header class="header">
+    <a href="index.html" class="logo">🐾 PawLux</a>
+
+    <nav id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+        <button id="themeBtn">🌙</button>
+        <button id="wishlistBtn">♡ <span id="wishlistCount">0</span></button>
+        <button id="cartBtn">🛒 <span id="cartCount">0</span></button>
+        <button id="menuBtn" class="menu-btn">☰</button>
+    </div>
+</header>
+
+<section class="page-hero">
+    <span class="eyebrow">PAWLUX COLLECTION</span>
+    <h1>Shop Premium Pet Essentials</h1>
+    <p>Everything your pet needs, carefully selected for quality and comfort.</p>
+</section>
+
+<main class="section container">
+
+    <div class="shop-toolbar">
+        <div class="search-box">
+            🔍
+            <input type="text" id="searchInput" placeholder="Search products...">
+        </div>
+
+        <select id="categoryFilter">
+            <option value="All">All Categories</option>
+            <option value="Dogs">Dogs</option>
+            <option value="Cats">Cats</option>
+            <option value="Food">Food</option>
+            <option value="Toys">Toys</option>
+            <option value="Grooming">Grooming</option>
+            <option value="Accessories">Accessories</option>
+        </select>
+
+        <select id="sortProducts">
+            <option value="default">Sort By</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="rating">Top Rated</option>
+        </select>
+    </div>
+
+    <div id="shopProducts" class="product-grid"></div>
+
+    <div class="load-more-wrap">
+        <button id="loadMore" class="btn btn-outline">Load More Products</button>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <a href="index.html" class="logo">🐾 PawLux</a>
+            <p>Premium care for your favorite companions.</p>
+        </div>
+
+        <div>
+            <h4>Shop</h4>
+            <a href="shop.html">All Products</a>
+            <a href="shop.html?category=Dogs">Dogs</a>
+            <a href="shop.html?category=Cats">Cats</a>
+            <a href="shop.html?category=Food">Food</a>
+        </div>
+
+        <div>
+            <h4>Company</h4>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>📍 Chandigarh, India</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉️ hello@pawlux.com</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">© 2026 PawLux. All Rights Reserved.</div>
+</footer>
+
+<div id="cartOverlay" class="cart-overlay"></div>
+
+<aside id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button id="closeCart">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+        <div>
+            <span>Total</span>
+            <strong id="cartTotal">$0.00</strong>
+        </div>
+        <button id="checkoutBtn" class="btn full">Checkout</button>
+    </div>
+</aside>
+
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

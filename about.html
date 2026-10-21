@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | PawLux</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="topbar">
+    <p>🐾 Free shipping on orders over $75</p>
+    <p>Premium Care • Happy Pets • Happy Life</p>
+</div>
+
+<header class="header">
+    <a href="index.html" class="logo">🐾 PawLux</a>
+
+    <nav id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="services.html">Services</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+        <button id="themeBtn">🌙</button>
+        <button id="wishlistBtn">♡ <span id="wishlistCount">0</span></button>
+        <button id="cartBtn">🛒 <span id="cartCount">0</span></button>
+        <button id="menuBtn" class="menu-btn">☰</button>
+    </div>
+</header>
+
+<section class="page-hero">
+    <span class="eyebrow">OUR STORY</span>
+    <h1>We Believe Pets Deserve The Very Best.</h1>
+    <p>Welcome to PawLux — where premium pet care meets everyday happiness.</p>
+</section>
+
+<section class="section container about-story">
+
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1000&q=80" alt="Happy pets">
+    </div>
+
+    <div>
+        <span class="eyebrow">WHO WE ARE</span>
+        <h2>Made With Love For Pet Parents.</h2>
+
+        <p>
+            PawLux started with one simple idea: pet parents shouldn't have
+            to choose between quality, style and affordability.
+        </p>
+
+        <p>
+            We carefully select premium products that make everyday life
+            better for both pets and their humans.
+        </p>
+
+        <p>
+            From cozy beds and nutritious food to stylish accessories and
+            professional services, PawLux is designed to be your pet's
+            favorite destination.
+        </p>
+
+        <a href="shop.html" class="btn">Explore Our Products →</a>
+    </div>
+
+</section>
+
+<section class="stats-section">
+    <div class="container stats">
+        <div><strong>2,500+</strong><span>Happy Customers</span></div>
+        <div><strong>15K+</strong><span>Pets Served</span></div>
+        <div><strong>120+</strong><span>Products</span></div>
+        <div><strong>4.9/5</strong><span>Customer Rating</span></div>
+    </div>
+</section>
+
+<section class="section soft-section">
+    <div class="container">
+        <div class="section-heading centered">
+            <span class="eyebrow">OUR VALUES</span>
+            <h2>What Makes PawLux Different?</h2>
+        </div>
+
+        <div class="values-grid">
+
+            <div class="value-card">
+                <span>💚</span>
+                <h3>Pet First</h3>
+                <p>Every decision begins with the comfort and happiness of pets.</p>
+            </div>
+
+            <div class="value-card">
+                <span>✨</span>
+                <h3>Premium Quality</h3>
+                <p>We focus on products that combine quality, safety and style.</p>
+            </div>
+
+            <div class="value-card">
+                <span>🤝</span>
+                <h3>Trust</h3>
+                <p>We want every PawLux customer to feel confident shopping with us.</p>
+            </div>
+
+            <div class="value-card">
+                <span>🐾</span>
+                <h3>Community</h3>
+                <p>We believe better pet care creates happier families.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <a href="index.html" class="logo">🐾 PawLux</a>
+            <p>Premium care for your favorite companions.</p>
+        </div>
+        <div>
+            <h4>Shop</h4>
+            <a href="shop.html">All Products</a>
+            <a href="shop.html?category=Dogs">Dogs</a>
+            <a href="shop.html?category=Cats">Cats</a>
+        </div>
+        <div>
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>📍 Chandigarh, India</p>
+            <p>📞 +91 98765 43210</p>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 PawLux. All Rights Reserved.</div>
+</footer>
+
+<div id="cartOverlay" class="cart-overlay"></div>
+
+<aside id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button id="closeCart">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+        <div><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+        <button id="checkoutBtn" class="btn full">Checkout</button>
+    </div>
+</aside>
+
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
